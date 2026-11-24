@@ -1,0 +1,17 @@
+{
+  "name": "diff-guard",
+  "version": "1.0.0",
+  "description": "Fast, zero-dependency Git diff security and hygiene scanner with Shannon entropy secret detection, destructive SQL checks, and SARIF 2.1.0 output",
+  "type": "module",
+  "main": "src/index.ts",
+  "bin": {
+    "diff-guard": "./src/cli.ts"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.ts",
+    "scan": "node src/cli.ts scan"
+  },
+  "keywords": ["git", "pre-commit", "security", "secret-scanner", "sarif", "shannon-entropy", "cli", "devsecops"],
+  "author": "Muhammet Aydın <muhammet59aydin@gmail.com>",
+  "license": "MIT"
+}
